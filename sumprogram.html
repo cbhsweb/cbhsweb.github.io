@@ -1,0 +1,48 @@
+<html>
+<head>
+<script>
+function calculate(num,answer)
+{
+alert ("we are in the function. Highest number is " + num)
+
+answer=""
+
+var total = 0;
+
+    for (var i = 1; i <= num; i++)
+{
+      
+      	total = total + i;
+
+ document.form1.answer.value += "\n" + total  	
+}
+
+
+}
+</script>
+</head>
+<body bgcolor=tan>
+<h1>
+One of the first programs all computer science students 
+learn to write is :
+</h1>
+<form name=form1>
+<h2>Find the sum of the numbers 1 to 100
+</h2>
+<h2>This requires a loop which is some code that is repeated
+</h2>
+<h3>Enter the highest number to include: 
+
+<input type=text name=num>
+<br>
+<input type=button onclick=calculate(num.value,answer.value)
+ value="Add the numbers">
+
+<br>
+The total of the numbers is 
+<br><textarea rows=20 name=answer>
+</textarea>
+
+</form>
+</body>
+</html>
