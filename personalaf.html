@@ -1,0 +1,76 @@
+<html>
+    <head>
+	<title>
+	    Pink Robotics
+	</title>
+	<link rel="stylesheet" href="styles.css">
+    </head>
+    <script>
+	function create(join,first,last,email) {
+	    if (join=="" || first=="" || last=="" || email=="") {
+		alert ("Please fill in all fields")
+	    }
+	}
+    </script>
+    <body>
+	<ul id="navbar">
+	    <li><a class="active" href="personalaf.html">Home</a></li>
+	    <li><a href="akfftc.html">FTC</a></li>
+	    <li><a href="akffrc.html">FRC</a></li>
+	    <li><a href="akfgallery.html">Gallery</a></li>
+	    <li style="float:right"><img src="pinkteamlogo.jpg" height="42" width="42"></li>
+	</ul>
+	<br>
+	<br>
+	<h1>Pink Robotics</h1>
+	<h3>FRC Team 233 and FTC Team 6323</h3>
+	<center><img src="https://www.firstinspires.org/sites/default/files/uploads/resource_library/brand/FIRST_Horz_RGB.jpg" width=750px></center>
+	<br>
+	<h2>About Pink Robotics</h2>
+	<p>
+	    Pink Robotics is a FIRST robotics team which spans 5 different schools in Brevard
+	    County, Florida. The team includes members from Cocoa Beach Jr./Sr. High School, 
+	    Viera High School, Rockledge High School, Space Coast High School, and Satelite 
+	    High School. The team also has many mentors from varying profesasions including NASA
+	    engineers as well as engineers for SpaceX, Lockheed Martin, and other private
+	    engineering organizations.
+	</p>
+	<p>
+	    The goal of Pink Roboitics is to spread the ideas of STEM subjects and to introduce
+	    students to the engineering design process as well as allow them to gain experience
+	    from professionals in engineering fields. However, Pink Robotics also seeks to make
+	    this fun for students by competing against other schools and working together to
+	    achieve a goal which would be near impossible by themselves.
+	</p>
+	<br>
+	<h2>Form</h2>
+	<form name=form1 action="mailto:aidanf2020@gmail.com" method="get" enctype="text/plain">
+	    Would you like to join?
+	    Yes<input type=radio name=join value="No">
+	    No<input type=radio name=join value="Yes">
+	    <br>
+	    First Name:<input type=text name=first>
+	    <br>
+	    Last Name:<input type=text name=last>
+	    <br>
+	    Email Address:<input type=text name=email>
+	    <br>
+	    Grade:
+	    <select>
+		<option value="Choose One">Choose One</option>
+		<option value="Freshman">Freshman</option>
+		<option value="Sophmore">Sophmore</option>
+		<option value="Junior">Junior</option>
+		<option value="Senior">Senior</option>
+	    </select>
+	    <br>
+	    <input type=submit name=submit value="Click to Submit" onclick=create(join.value,first.value,last.value,email.value)>
+	</form>
+	<br>
+	<h2>Related Links</h2>
+	<ul>
+	    <li><a href="https://www.firstinspires.org/robotics/frc">FRC Official Webpage</li>
+	    <li><a href="https://www.firstinspires.org/robotics/ftc">FTC Official Webpage</li>
+	</ul>
+    </body>
+</html>
