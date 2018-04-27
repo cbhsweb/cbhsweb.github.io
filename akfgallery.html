@@ -1,0 +1,52 @@
+<html>
+    <head>
+	<title>
+	    Pink Robotics
+	</title>
+	<link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+	<ul id="navbar">
+	    <li><a href="akfhome.html">Home</a></li>
+	    <li><a href="akfftc.html">FTC</a></li>
+	    <li><a href="akffrc.html">FRC</a></li>
+	    <li><a class="active" href="akfgallery.html">Gallery</a></li>
+	    <li style="float:right"><img src="pinkteamlogo.jpg" height="42" width="42"></li>
+	</ul>
+	<br>
+	<br>
+	<br>
+	<div class="w3-content w3-display-container">
+  	    <img class="mySlides" src="6323_1.jpg" style="width:100%">
+  	    <img class="mySlides" src="6323_2.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_3.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_4.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_5.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_6.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_7.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_8.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_9.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_10.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_11.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_12.jpg" style="width:100%">
+	    <img class="mySlides" src="6323_13.jpg" style="width:100%">
+	</div>
+
+	<script>
+	    var myIndex = 0;
+	    carousel();
+
+	    function carousel() {
+	        var i;
+	        var x = document.getElementsByClassName("mySlides");
+	        for (i = 0; i < x.length; i++) {
+	           x[i].style.display = "none";  
+	        }
+	        myIndex++;
+	        if (myIndex > x.length) {myIndex = 1}    
+	    	        x[myIndex-1].style.display = "block";  
+	        setTimeout(carousel, 2000); // Change image every 2 seconds
+	    }
+	</script>
+    </body>
+</html>
