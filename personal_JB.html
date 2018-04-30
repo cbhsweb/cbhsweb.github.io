@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>
+PPAP
+</title>
+<script>
+function qmath(fruit,pen,step){
+	if
+		(fruit=="Apple")
+			if
+				(pen=="Pen")
+					alert("Apple Pen, step = 231")
+			else
+				alert("Wrong")
+	else
+		if
+			(step=="231")
+				if
+					(fruit=="Pineapple")
+						if
+							(pen=="Pen")
+								alert("Pineapple Pen, step = 441")
+						else
+							alert("Wrong")
+				else
+					alert("Wrong")
+		else
+			if
+				(step=="441")
+					if
+						(fruit=="Apple Pen")
+							if
+								(pen=="Pineapple Pen")
+									alert("Pen Pineapple Apple Pen, step = join")
+							else
+								alert("Wrong")
+					else
+						alert("Wrong")
+			else
+				alert("Wrong")
+}
+function send(step){
+	if
+		(step=="join")
+			document.getElementById("form1").submit();
+	else
+		alert("Please pass the test first")
+}
+</script>
+</head>
+<form name=form1 action="mailto:jcb31415@gnail.com" method="get" enctype="text/plain">
+<body>
+<h1> Welcome to the Pen pineapple Apple pen club page!</h1>
+Why should you join?
+<br />
+<img src="O:\ppap.jpg" width=400 height=400>
+<br />
+Current Club President:<br />
+<img src="O:\Untitled drawing (2).png" width=400 height=400> <br />
+<form name=meme>
+<table width=800 border=1 bordercolor=black cellspacing=0>
+<tr>
+<td colspan=5>
+Welcome to our Test! Please pass to proceed
+</td>
+</tr>
+<tr>
+<td>
+<input type=text name=fruit value="fruit">
+<td> +
+<td>
+<input type=text name=pen value="Pen">
+<td>
+<input type=button value=Total onclick=qmath(fruit.value,pen.value,step.value)>
+<td>
+<textarea rows=1 name=step wrap=soft>Step</textarea>
+</table>
+Hint
+<br />
+<img src="O:\Untitled drawing.png" width=400 height=400> + <img src="O:\Untitled drawing (1).png" width=400 height=400>
+<table border=3 bgcolor=orange>
+<tr>
+<td colspan=4>
+Fill out to Join
+</td>
+<tr>
+<td>
+First</td>
+<td><input type=text name=first>
+<td>Last
+<td>
+<input type=text name=last>
+<tr>
+<td>
+<select name=grade>Grade
+<option value=9>9
+<option value=10>10
+<option value=11>11
+<option value=12>12
+<td colspan=2>
+<input type=text name=email value="Put your Email Here">
+<td>
+<input type=button value=Send onclick=send(step.value)>
+</table>
+</body>
+</form>
+<a href=#top>Back to Top</a>
+<i>Most of work done in javascript</i>
+</html>
