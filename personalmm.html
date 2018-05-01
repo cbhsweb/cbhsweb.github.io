@@ -1,0 +1,156 @@
+<html>
+
+<head>
+
+<title>Madison CBHS Chorus
+
+</title>
+
+<script>
+
+
+function create(join,first,last,email)
+
+{
+if (join=="" || first=="" || last=="" || email=="")
+
+alert ("Please don't leave these fields blank")
+
+else
+
+alert ("Thank you " + first )
+
+}
+
+
+</script>
+<style>
+table {
+	color: purple;
+	font-weight: none;
+	font-style: italic;
+	font-size: 120%;
+	text-align: center;
+	font family: 'Poppins', sans-serif;
+}
+</style>
+</head>
+
+<body background=hearts.jpg>
+<center><img src=music.png>
+<br>
+<br>
+<h2><i><u>About</i></u></h2>
+<h3>In chorus, we learn different songs, perform both on stage and at festivals such as Music USA and get judged at MPA. We also go on field trips every year and have two yearly concerts here at CBHS. Other classes in the music program include Middle School Chorus, Band, Orchestra, and Chamber Orchestra. 
+</h3>
+
+<table border=1 bgcolor=lavender cellpadding=5 cellspacing=2 width=800 bordercolor=pink>
+<tr><th colspan=3>
+CBHS Music Program</th>
+
+</tr>
+<tr><td><b>Class</td>
+<td><b>Director</td>
+<td><b>Building</b></td></tr>
+
+<tr><td>Concert/Chamber Orchestra</td>
+<td>Steven Murray</td>
+<td>6</td></tr>
+
+<tr><td>Middle/High School Chorus</td>
+<td>Steven Murray</td>
+<td>6</td></tr>
+
+<tr><td>Band/Steel Drums</td>
+<td>Yvonne Campbell</td>
+<td>6</td></tr> 
+
+</table>
+
+<br>
+<br>
+Click here to go to <a href=#meetings>Meetings</a>
+--- <a href=#pictures>Pictures</a>
+--- <a href=#director>Director</a>
+<br>
+<br>
+<hr width=500 color=white>
+<br>
+<br>
+<a name=#meetings>
+<h2><i><u>Meetings</i></u></h2>
+<h3><font color=purple>
+<ul>
+<li>We meet every day
+<li>The class is during 3rd period in building 6
+<li>We may have after school rehearsals occasionally before a big performence, however it will most likely not be more than 1 or 2 in the school year.
+</ul>
+</h3>
+</font>
+<br>
+<br>
+<hr width=500 color=white>
+<br>
+<br>
+<a name=#pictures>
+<h2><i><u>Pictures</h2></i></u>
+<br>
+<img src=trip.jpg height=300 width=200>
+<br> A picture from our recent trip to Universal Studios
+<br>
+<br>
+<img src=directors.jpg height=300 width=200>
+<br>Our chorus and orchestra director, strings consultant, and band director
+<br>
+<br>
+<img src=group.jpg height=300 width=200>
+<br> All our our music groups!
+
+
+<br>
+<br>
+<hr width=500 color=white>
+<br>
+<br>
+<a name=#director>
+<h2><i><u>Director</h2></i></u>
+<h3>
+<font color=white>
+The choir director of CBHS High School and Middle School Concert Choir is Steven Murray. He has been at CBHS for 4 years, after being a substitute teacher. He has been a band director, orchestra director, and a church choir director. This year, the classes that his is teaching are middle school concert choir, high school concert choir, middle school concert orchestra, high school concert orchestra, and chamber orchestra. This year, the High School Concert Choir has gotten an overall excellent at MPA, and a 1st place Superior at the Music USA Festival at Universal Studios.
+
+<form name=form1 action="mailto:madisonmoore870@yahoo.com" method="get" enctype"text/plain">
+<table border=1 bgcolor=skyblue>
+<tr><td>Would you like to join?
+</td>
+<td><input type=radio name=join>Yes
+<br>
+<input type=radio name=join>No
+</td></tr>
+
+<tr><td>Enter your first name
+<td><input type=text name=first>
+</td>
+<td>Enter your last name
+<input type=text name=last>
+</td></tr>
+
+<tr><td>Enter your email address
+</td>
+<td><input type=text name=email>
+</td></tr>
+
+<tr><td>What grade are you in?</td>
+<td><select name=grade>
+<option value="9">9th grade
+<option value="10">10th grade
+<option value="11">11th grade
+<option value="12">12th grade
+</select</td></tr>
+
+<tr><td><input type=submit value="Click here to submit" onclick=create(join.value,first.value,last.value,email.value)>
+</td>
+</tr>
+</table>
+</form>
+
+</html>
