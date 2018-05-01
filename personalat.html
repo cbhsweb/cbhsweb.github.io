@@ -1,0 +1,137 @@
+<!doctype=html>
+<html>
+
+<head>
+
+<title>Abby's Volleyball Page</title>
+
+<script>
+function create(join,first,last,email)
+{
+if (join=="" || first=="" || email=="")
+
+alert ("Please don't leave these fields blank")
+
+else 
+
+alert ("How you doin?" + first)
+
+}
+
+</script>
+
+<style>
+table {
+	color: black;
+	font-weight: bold;
+	font-style: 120%;
+	text-align: center;
+	font-family: 'Popins , san-serif;
+	}
+</style>
+
+</head>
+
+<body>
+
+<hr>
+<h2><center><img src=cbhsvb.png></h2></center>
+<center>
+<a href=#Coaches><img src=coaches.png></a>
+<a href=#Practice Schedule><img src=practiceschedule.png></a>
+<a href=#Summer Practices><img src=summerpractices.png></a>
+<a href=#Links><img src=links.png></a>
+</center>
+<hr>
+<a name=#Coaches>
+<h1>Coaches</h1>
+<p>Cocoa Beach offers volleyball at the varsity, junior varsity, and freshman level. The coaches at these level are:
+<ul>
+<li>Varsity-Coach Terrance
+<li>Junior Varsity-Coach Terrance
+<li>Freshman-Coach Sam
+</ul>
+
+<img src=cbvb2.jpg>
+<img src=minutemenlogo.gif>
+<img src=cbvb.jpg>
+<a name=#Practice Schedule>
+<h1>Practice Schedule</h1>
+<table border=1>
+<tr><th colspan=3>
+Practice Schedule</th></tr>
+<tr><td>Team</td>
+<td>Time</td>
+<td>Days</td>
+</tr>
+<tr><td>Varsity</td>
+<td>5-7 p.m</td>
+<td>Monday-Friday</td>
+</tr>
+<tr><td>Junior Varsity</td>
+<td>3:45-5:30 p.m</td>
+<td>Monday-Friday</td>
+</tr>
+<tr><td>Freshman</td>
+<td>3:45-5 p.m</td>
+<td>Monday-Thursday</td>
+</tr>
+</table>
+<p> *practice dates and times are subject to change due to coaches availability and other school events 
+<a name=#Summer Practices>
+<h1>Summer Practices</h1>
+<p>The official seasons begins July 31, but over the summer the following programs are offered to returning players to get ready for the season:
+</p>
+<ul>
+<li>Summer practices at the CBHS gym
+<li>Conditioning at the Cocoa Beach Pier
+<li>Pre-season scrimages between others schools in the county
+</ul>
+
+<a name=#Links>
+<h1>Links</h1>
+<a href="http://www.maxpreps.com/high-schools/cocoa-beach-minutemen-(cocoa-beach,fl)/volleyball/home.htm">This link shows the schedule and stats for CBHS's volleyball team
+<br>
+<a href="https://www.facebook.com/cbhsvolleyball">This link goes to CBHS's facebook page
+</a>
+
+<form name=form1 action="mailto:abbytaylor36@aol.com"
+method="get" enctype="text/plain">
+<table border=1 bgcolor=red>
+<tr><td>Would you like to join CBHS's volleyball team?
+</tr></td>
+<td><input type=radio name=join>Yes
+<br>
+<input type=radio name=join>No
+
+</td></tr>
+
+<tr><td>Enter your first name
+<td><input type=text name=first>
+</td></tr><tr><td>Enter your last name
+<td><input type=text name=last>
+</td></tr>
+<tr><td>Enter your email adress
+</td>
+<td><input type=text name=email>
+</td></tr>
+
+<tr><td>What grade are you in?</td>
+<td><select name=grade>
+<option value="9">9th Grade
+<option value="10">10th Grade
+<option value="11">11th Grade
+<option value="12">12th Grade
+</select>
+<td><tr>
+
+<tr><td><input type=submit value="Click here to submit"
+onclick=create(join.value,first.value,last.value,email.value)>
+
+</td><td><input type=reset>
+</td></tr>
+</table>
+</form>
+</body>
+
+</html>
