@@ -52,12 +52,12 @@ Click here to go to
 <a name=#officers> Officers-
 ...
 </h2>
-Nimrit, 10th grade- Chapter President<br>
+Nimrit,Â 10th grade- Chapter President<br>
 Tessa, 10th grade - VP<br>
 Chase, 10th grade - Treasurer<br>
 Bethany, 11th grade - Secretary <br>
-Carlie, 9th grade - Reporter <br>
-Nolan, 10th grade - Parliamentarian <br>
+Carlie, 9th grade -Â Reporter <br>
+Nolan,Â 10th grade - Parliamentarian <br>
 <h2>
 </tr>
 <h2>
@@ -139,27 +139,25 @@ Short Stories
 <td><input type=checkbox name=book value="fantasy">
 <br>
 </td>
-<td>
-</table>
-<form name=form2 action="mailto:Bretspath@gmail.com" method="get enctype="text/plain">
-<table>
-<td><tr>
-Would you like to join? <Br> Yes<input type=checkbox value="Yes">
-No<input type=checkbox value="No">
+<tr>
+<form name=form1 action="mailto:Bretspath123@gmail.com" method="get" enctype="text/plain">
+Would you like to join?<br>
+<input type=checkbox name=check value="yes">Yes<br>
+<input type=checkbox name=check value="no">No<br><br>
+First Name<input type=text name=first>
+Last Name<input type=text name=last>
+E-mail Address<input type=text name=email><br><br>
+Grade<br>
+<select>
+<option value="7">7<sup>th</sup> Grade</option>
+<br><option value="8">8<sup>th</sup> Grade</option>
+<option value="9">9<sup>th</sup> Grade</option>
+<option value="10">10<sup>th</sup> Grade</option>
+<option value="11">11<sup>th</sup> Grade</option>
+<option value="12">12<sup>th</sup> Grade</option>
+</select>
 <br>
-First Name <input type=text>
-Last Name <input type=text>
-<br>
-Email Address <input type=text name=r>
-
-Grade <select>
-   <option value="9">9th Grade</option>
-   <option value="10">10th Grade</option>
-   <option value="11">11th Grade</option>
-   <option value="12">12th Grade</option>
-</select> 
-<input type=submit value="click here to submit" onclick=create(join.value,first.value,last.value,email.value)>
-</form>
-
+<input type=submit value="Submit" onclick=create(check.value,first.value,last.value,email.value)>
+<input type=reset value="Clear">
 </body>
 </html>
