@@ -1,0 +1,232 @@
+<html>						
+<head>
+<title>Sydney's Website
+</title>
+<script>
+function create(join,first,last,email)
+{
+if (join=="" || first==""|| last==""|| email=="")
+
+alert ("Please don't leave these feilds blank")
+
+else
+
+alert("How ya doin?" + first)
+
+}
+
+</script>
+</head>
+
+<body bgcolor=blue>
+
+<marquee direction=across>
+<font face="Poppins">
+<h2>
+<img src=logo2.png height=50 >
+</h2>
+</marquee>
+
+<img src=teampicture.jpg alt="UF Volleyball Team 2018"
+align=left height=300 width=400 hspace=20>
+
+<img src=vballspike.jpg alt="Jump float serve" 
+align=center height=300 width=400 hspace=20>
+
+<img src=dig.jpg alt="A+ passing" height=300 width=400 hsspace=20>
+
+<br>
+<font color=orange size=32>
+HISTORY
+</font>
+
+<br>
+<font color=white size=4.5>
+23 SEC Championships
+<br>
+8 NCAA Final Four Appearances
+<br>
+39 All-Americans
+<br>
+102 All-America Honors
+<br>
+28 NCAA Tournament Appearances
+<br>
+27 Consecutive 25-Win Seasons
+</font>
+
+
+<br>
+
+<table border=white font color=white>
+<tr>
+<th>#</th>
+<th>Name</th>
+<th>Position</th>
+<th>Height</th>
+<th>Hometown</th>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Darrille King</td>
+<td>MB</td>
+<td>6'3</td>
+<td>Desoto, Texas</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Lauren Dooley</td>
+<td>MB</td>
+<td>6'6</td>
+<td>Plano, Texas</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Rachael Kramer</td>
+<td>MB</td>
+<td>6'8</td>
+<td>Pheonix, Arizona</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>Paige Hammons</td>
+<td>OH</td>
+<td>6'1</td>
+<td>Louisville, Kentucky</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>Mia Sokolowski</td>
+<td>OH</td>
+<td>6'4</td>
+<td>Tucson, Arizona</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>Taelor Kellum</td>
+<td>MB</td>
+<td>6'2</td>
+<td>Chattanooga, Tennesse</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>Morgyn Greer</td>
+<td>OH</td>
+<td>6'3</td>
+<td>Dripping Springs, Texas</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td>Allie Gregory</td>
+<td>DS</td>
+<td>5'6</td>
+<td>Louisville, Kentucky</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td>Macy Phillips</td>
+<td>DS</td>
+<td>5'7</td>
+<td>Merritt Island, Florida</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td>Thayer Hall</td>
+<td>OH</td>
+<td>6'3</td>
+<td>Spartanburg, South Carolina</td>
+</tr
+
+<tr>
+<td>22</td>
+<td>Allie Monserez</td>
+<td>S</td>
+<td>5'9</td>
+<td>Windermere, Florida</td>
+</tr>
+
+<tr>
+<td>23</td>
+<td>Chanelle Hargreaves</td>
+<td>DS</td>
+<td>5'4</td>
+<td>Tampa, Florida</td>
+</tr>
+
+<tr>
+<td>24</td>
+<td>Ann-Lorranye</td>
+<td>DS</td>
+<td>5'5</td>
+<td>Gainsville, Florida</td>
+</tr>
+</table>
+
+<br>
+<font color=white>
+<b>TABLE KEY ^</b>
+<ul>
+<li>OH- outside hitter
+<li>MB- middle blocker
+<li>DS- defense specialist
+<li>S- setter
+</font>
+</ul>
+
+<form name=form1 action="mailto:smcastillo2001@gmail.com"
+method="get" enctype="text/plain">
+
+<table border=1>
+<tr><td>Would you like to be on a college sports team?
+</td>
+<td><input type=radio name=join>Yes
+<br>
+<input type=radio name=join>No
+</td></tr>
+
+<tr><td>Enter your first name
+<td><input type=text name=first>
+</td>
+<td>Enter your last name
+<input type=text name=last>
+</td></tr>
+
+<tr><td>Enter your email address
+</td>
+<td><input type=text name=email>
+</td></tr>
+
+<tr><td>What volleyball position is your favorite?</td>
+<td><select name=grade>
+<option value="Outside">Outside hitter
+<option value="Right side">Right side hitter
+<option value="Middle">Middle blocker
+<option value="Setter">Setter
+<option value="Backrow">Backrow/Passing
+</select></td></tr>
+
+<tr><td><input type=submit value="Click here to submit"
+onclick=create(join.value,first.value,last.value,email.value)>
+</td><td>
+<input type=reset>
+</tr>
+
+
+
+
+
+
+
+
+</body>
+</html>
