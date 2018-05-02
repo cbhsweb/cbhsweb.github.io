@@ -8,16 +8,13 @@ Madison Day's CBHS Club Page
 
 <script>
 
-function create(first,last,join,grade)
+function create(join,first,last,email)
 
 {
-
-if (first=="" || last=="" || join=="" || grade=="")
+if (join=="" || first=="" || last=="" || email=="")
 
 alert ("Please don't leave these fields blank!")
-
 else
-
 alert ("Thanks for submitting!" + first)
 
 }
@@ -154,6 +151,12 @@ The coaches of the team include the head JV coach, Chad Day, varsity coach, Fern
 </tr>
 </table>
 
+<p>
+<font size=5>
+Also, here is the Varsity roster if you want to see who's on the Varsity team!
+<br>
+<a href="http://www.maxpreps.com/high-schools/cocoa-beach-minutemen-(cocoa-beach,fl)/girls-soccer-winter/schedule.htm">Varsity Roster</a>
+
 <hr color=white size=8>
 
 <h2>
@@ -191,6 +194,10 @@ The coaches of the team include the head JV coach, Chad Day, varsity coach, Fern
 <p>
 <font size=5>
 The ladies have had an incredible season this year, especially for consisting of mainly middle schoolers and new players to the game.
+<br>
+If you want to look at Varsity statistics, here's a link to their statistics! 
+<br>
+<a href="http://www.maxpreps.com/high-schools/cocoa-beach-minutemen-(cocoa-beach,fl)/girls-soccer-winter/schedule.htm">Varsity Stats</a>
 <br>
 Here are some more statistics, besides winning and losing!
 
@@ -237,7 +244,7 @@ Feel free to check it out!
 <a name=#Form>Form
 </h1>
 
-<form name=form1>
+<form name=form1 action="mailto:1403204@brevardschools.org" method="get" enctype="text/plain">
 <table border=1 bgcolor=white>
 
 <tr><td>Enter your first name
@@ -245,6 +252,10 @@ Feel free to check it out!
 </td></tr>
 <tr><td>Enter your last name
 <td><input type=text name=last>
+</td></tr>
+
+<tr><td>Email
+<td><input type=text name=email>
 </td></tr>
 
 <tr><td>Would you like to join the team?
@@ -282,7 +293,7 @@ Feel free to check it out!
 </td></tr>
 
 <tr><td><input type=submit value="Send This Form"
-onclick=validator(name.value,join.value,grade.value,postion.value)>
+onclick=create(join.value,first.value,last.value,email.value)>
 
 <input type=reset value="Clear">
 </td></tr>
