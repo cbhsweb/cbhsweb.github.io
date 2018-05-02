@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>
+Theatre Club
+
+</title>
+<script>
+function create(join,first,last,email)
+{
+if (join=="" || first=="" || last=="" || email=="")
+
+alert ("please don't leave these fields blank")
+else
+alert ("Thank you " +first)
+}
+
+
+</script>
+
+<style>
+
+</style>
+
+</head>
+
+<body bgcolor=black>
+
+<p style="text-align:center;"><img src=coollogo.png></p>
+
+
+
+<font color=white>
+
+<h1>
+<p style="text-align:center;">
+Cocoa Beach High School's theatre building is a second home to some kids, and the people in the theatre club are like family.
+</p></h1>
+
+<br>
+
+<h3>
+<p style="text-align:center;">
+Meetings are supposed to be every other wednesday in the theatre building
+</h3>
+
+<br>
+
+<hr color=purple size=7 width=600>
+
+
+
+
+
+<table border=3 bgcolor=white  cellpadding=15
+cellspacing=0 width=500 bordercolor=black>
+
+<p style="text-align:center;">
+
+<tr bgcolor=black><th colspan=3>
+<font color=white>
+Important Dates </th>
+</tr>
+
+<tr>
+<td>Dates</td>
+<td>Event</td>
+</tr>
+
+<tr><td>Febuary 21-24</td>
+<td>Childrens Hour</td>
+</tr>
+
+<tr><td> March 13-18 </td>
+<td> State </td>
+</tr>
+
+<tr><td>April 26</td>
+<td>Showcase</td>
+</tr>
+
+</table> </p>
+
+<br>
+
+<hr color=purple size=7 width=600>
+
+<h2>
+<p style="text-align:center;">
+The presidents are:
+</p></h2>
+
+<ul>
+<li> Tonya - High School
+<li> Hannah - High School
+<li> Barbra - Middle School
+</ul>
+
+<br>
+
+<hr color=purple size=7 width=600>
+
+<h2>
+<p style="text-align:center;">
+Productions We've performed:
+</p></h2>
+
+<ul>
+<li> Childrens Hour (The Improv show)
+<li> Footloose
+<li> Star Wars: The musical
+<li> Boeing boeing
+<li> Peter Pan
+</ul>
+
+<br>
+
+<hr color=purple size=7 width=600>
+
+<h3>
+<p style="text-align:center;">
+Related sites:
+</h3>
+
+<a href="https://www.floridatoday.com/story/entertainment/arts/2016/10/27/high-school-theater/92842768/">
+Article about high school theatre (featuring the wise Mr.Buck) </a>
+
+<br>
+
+<a href="https://www.youtube.com/watch?v=e-OUfvqbDGc">
+Our 2011 performance of Star Wars: The Musical </a>
+
+<br>
+
+<a href="https://floridathespians.com/">
+Information about Florida State Thespians 2018</a>
+
+<hr color=purple size=7 width=600>
+<br>
+<br>
+<br>
+<br>
+
+
+<h1>
+<p style="text-align:center;">
+and remember...
+</h1>
+
+<br>
+<br>
+<br>
+
+<p style="text-align:center;"><img src=HappyHands.png></p>
+
+
+
+
+
+
+
+
+
+<form name=form1 action="mailto:schmidt.kayla57@gmail.com"
+method="get" enctype="text/plain"><p style="text-align:center;">
+<table border=1 bgcolor=white> 
+<tr><td>Would you like to join?
+</td>
+<td>
+<input type=radio name=join>Yes
+<br>
+<input type=radio name=join>No
+
+</td></tr>
+
+<tr><td> Enter you first name
+<td><input type=text name=first>
+</td>
+<td>Enter your last name
+<input type=text name=last>
+</td></tr>
+
+<tr><td>Enter your email address
+</td>
+<td><input type=text name=email>
+</td></tr>
+
+<tr><td> What grade are you in?</td>
+<td><select name=grade>
+<option value="9"> 9th grade
+<option value="10"> 10th grade
+<option value="11"> 11th grade
+<option value="12"> 12th grade
+</select></td></tr>
+
+<tr><td><input type=submit value="Click here to submit"
+onclick=create(join.value,first.value,last.value,email.value)>
+</td><td>
+<input type=reset>
+</tr>
+
+
+
+
+
+
+</body>
+</html>
