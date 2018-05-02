@@ -3,12 +3,12 @@
 <title>Chelsea FC
 </title>
 <script>
-function create(interest,name,email)
+function create(interest,firstname,lastname,email)
 {
-if (join=="" || first=="" || last=="" || email=="")
+if (interest=="" || firstname=="" || lastname=="" || email=="")
 alert ("Please don't leave these fields blank")
 else
-alert ("How are you " + first)
+alert ("How are you " + firstname + lastname)
 }
 </script>
 <style>
@@ -242,9 +242,9 @@ Like the Team (Survey)?
 <input type=radio name=interest value=no>No
 </td></tr>
 <tr><td>Your Name</td>
-<td>First Name<input type=text name=name>
+<td>First Name<input type=text name=firstname>
 <br>
-Last Name <input type=text name=name>
+Last Name <input type=text name=lastname>
 </td></tr>
 <tr><td>Email Address</td>
 <td><input type=text name=email>
@@ -259,7 +259,7 @@ Last Name <input type=text name=name>
 	<option value="60+">60+</option>
 </td></tr>
 <tr><td><input type=submit value="Submit"
-onclick=create(interest.value,name.value,email.value)>
+onclick=create(interest.value,firstname.value,lastname.value,email.value)>
 <input type=reset value="Clear">
 	</td></tr></table></form>
 </font>
