@@ -7,6 +7,15 @@ body {
 	color: white;
 }
 </style>
+<script>
+function submitF() {
+	if (!(document.getElementById('name').value) || !(document.getElementById('email').value) || (document.getElementById('radio1').checked === false && document.getElementById('radio2').checked === false)) {
+		alert('You have not filled all forms! It will not be submitted!');
+	} else {
+		alert('Your response has been recorded!');
+	}
+}
+</script>
 </head>
 
 
@@ -54,7 +63,7 @@ in August 2018.
 <a href="https://www.youtube.com/watch?v=wgXvIBPTeO8">Bloom<br><br>
 </td>
 </tr>
-<tr><td><center>States</center><center><img src=https://upload.wikimedia.org/wikipedia/en/thumb/6/68/The_Papar_Kites_States_cover.jpg/220px-The_Papar_Kites_States_cover.jpg height=300 width=300></center></td><td><center>2015</center></td>
+<tr><td><center>States</center><center><img src=states.jpg height=300 width=300></center></td><td><center>2015</center></td>
 <td style=vertical-align:top>
 <a href="https://www.youtube.com/watch?v=ucrzWVrwy5U">Malleable Beings<br><br>
 <a href="https://www.youtube.com/watch?v=qznpclv8PTg">St. Clarity<br><br>
@@ -130,19 +139,19 @@ I'm Lying to You Cause I'm Lost<br><br>
 <br><br>
 
 
-<form name=form1 action="mailto:jgnajjar@gmail.com" method="get" enctype="text/plain">
+<form>
 <table border=1 bordercolor=white width=300>
 <tr><td>Enter your name:
-<input type=text name=first>
+<input id="name" type=text name=first>
 </td>
 <tr><td>Enter your email:
-<input type=text name=email>
+<input type=text id="email">
 </td></tr>
 
 <tr><td>Have you heard of the Paper Kites?
 <br>
-<input type=radio name=fan value=Yes>Yes
-<input type=radio name=fan value=No>No
+<input type=radio name=fan id="radio1" value=Yes>Yes
+<input type=radio name=fan id="radio2" value=No>No
 
 <tr><td>What album do you like most?
 <select name=album>
@@ -154,7 +163,7 @@ I'm Lying to You Cause I'm Lost<br><br>
 </select></td></tr>
 
 
-<tr><td><input type=submit value="Submit" onclick=create(join.value,first.value,email.value)>
+<tr><td><button onclick="submitF()">Submit</button>
 <input type=reset value="Clear">
 </td></tr>
 
