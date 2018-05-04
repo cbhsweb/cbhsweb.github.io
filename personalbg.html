@@ -27,7 +27,7 @@ Welcome to the Future Business Leaders of America!!
 <h1>FBLA</h1>
 <h2>Future Business Leaders of America</h2>
 
-<body bgcolor=black>
+<body bgcolor=blue>
 </head>
 
 
@@ -45,7 +45,7 @@ FBLA National
 
 <img src="https://dabuttonfactory.com/button.gif?t=nice4what&f=Open+Sans-Italic&ts=17&tc=fff&tshs=1&tshc=000&hp=20&vp=8&c=5&bgt=two-colors&bgc=f6b26b&ebgc=f90">
 <img src="https://dabuttonfactory.com/button.gif?t=fbla+is+gr8&f=Open+Sans-Italic&ts=17&tc=fff&tshs=1&tshc=000&hp=20&vp=8&c=5&bgt=two-colors&bgc=f6b26b&ebgc=f90">
-
+<img src="https://dabuttonfactory.com/button.png?t=join+now+!!&f=Calibri-Bold-Italic&ts=24&tc=fff&tshs=1&tshc=000&hp=20&vp=8&c=5&bgt=gradient&bgc=f90&ebgc=f90">
 
 
 <style>
@@ -162,33 +162,33 @@ fblar4@floridafbla-pbl.com
 <td>Indu Parameswaran</td>
 <td>fblaparli@floridafbla-pbl.com </td>
 </table>
-
 <br>
-<img src="https://dabuttonfactory.com/button.png?t=join+now+!!&f=Calibri-Bold-Italic&ts=24&tc=fff&tshs=1&tshc=000&hp=20&vp=8&c=5&bgt=gradient&bgc=f90&ebgc=f90">
 
-<table>
-<table border=6>
-<tr><th colspan=2>
-<table bgcolor=white>
-<style>
-table {
-	color:white;
-	font-weight:;
-	font-style:italic;
-	font-size:100%;
-	text-align;
-	font-family:'Poppins', sans-serif;
-}
-</style>
-
-<tr><td>Enter your first name
-</td>
-<tr><td> Enter your last name
-</td>
-<input type=text name=email>
+<form name=form1>
+<table><tr><td colspan=2>
 </tr></td>
 
+<tr><td>Enter your first name
+<input type=text name=first form name=form1>
+</td>
+<tr><td> Enter your last name
+<input type=text name=first form name=form1>
+</td><br>
+<br>
 
+
+<tr><td>Want to join?</td>
+<td><input type=radio name=join value=yes>
+Yes</td>
+<br>
+<td><input type=radio name=join value=no>
+No</td>
+<br>
+</td></tr>
+
+<tr><td>Email Address
+<input type=text name=email form name=form1 action= "mailto:heloidog@icloud.com"
+method="get" enctype="text/plain">
 
 <tr><td>What grade are you in??</td>
 <td><select name=grade>
@@ -196,8 +196,19 @@ table {
 <option value="10">10th grade
 <option value="11">11th grade
 <option value="12">12th grade
-</select></td></tr>
+</select>
+
+<tr><td>
+<input type=submit  value="Send This Form"
+onClick=validator(child.value,age.value,book.value)>
+<input type=submit  value="Clear">
+</td>
+</tr>
+
+
+
+</tr></td>
+</form>
 </table>
 
-<br>
 </html>
