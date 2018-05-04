@@ -5,7 +5,7 @@
 </title>
 <script>
 
-	function create(join,first,last,email) {
+	function create(first,email) {
 	    if (first=="" || email=="") {
 		alert ("Please fill in all fields")
 	    }
@@ -119,7 +119,7 @@ Cocoa Beach Soccer Schedual</a>
 		<option value="12">12</option>
 	    </select>
 	    <br>
-	    <input type=submit name=submit value="Click to Submit" onclick=create(join.value,first.value,last.value,email.value)>
+	    <input type=submit name=submit value="Click to Submit" onclick=create(first.value,email.value)>
 	</form>
 <br>
 <br>
