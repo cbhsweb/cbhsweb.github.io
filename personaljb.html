@@ -39,21 +39,37 @@ function qmath(fruit,pen,step){
 			else
 				alert("Wrong")
 }
-function send(step){
+function send(step,first,last,grade,email){
 	if
-		(step=="join")
-			document.getElementById("form1").submit();
+		(first=="")
+			alert("First name is blank")
 	else
-		alert("Please pass the test first")
+		if
+			(last=="")
+				alert("Last name is blank")
+		else
+			if
+				(grade=="")
+					alert("Grade is blank")
+			else
+				if
+					(email=="")
+						alert("Email is blank")
+				else
+					if
+						(step=="join")
+							document.getElementById("form1").submit();
+					else
+						alert("Please pass the test first")
 }
 </script>
 </head>
-<form name=form1 action="mailto:jcb31415@gnail.com" method="get" enctype="text/plain">
+<form name=form1 action="mailto:jcb31415@gmail.com" method="get" enctype="text/plain">
 <body>
 <h1> Welcome to the PPAP Fan club page!</h1>
 Why should you join?
 <br />
-PPAP is a hypothetical fan club for the strange yet interesting video <a href=https://www.youtube.com/wsatch?v=0E00Zuayv9Q>PPAP</a> by Piko Taro
+PPAP is a hypothetical fan club for the strange yet interesting video <a href="https://www.youtube.com/watch?v=Ct6BUPvE2sM">PPAP</a> by Piko Taro
 <br />
 <img src="Untitled drawing (3).png" width=200 height=400>
 <br />
@@ -84,7 +100,7 @@ Welcome to our Test! Please pass to proceed
 <a href=#bottom>Hint</a>
 <br />
 <h1>Events</h1>
-We do not meet in person, but we do have a discord set up. <a href="discord.gg/Ahf42As">Click here to join.</a>
+We do not meet in person, but we do have a discord set up. <a href="https://discord.gg/yr7wpR">Click here to join.</a>
 <h1><a id="signup"></a>Sign Up</h1>
 <br />
 <table border=3 bgcolor=orange>
@@ -109,7 +125,7 @@ First</td>
 <td colspan=2>
 <input type=text name=email value="Put your Email Here">
 <td>
-<input type=button value=Send onclick=send(step.value)>
+<input type=button value=Send onclick=send(step.value,first.value,last.value,grade.value,email.value)>
 </table>
 </body>
 </form>
@@ -120,4 +136,17 @@ First</td>
 <img src="Untitled drawing.png" width=250 height=250>
 <br />
 <img src="Untitled drawing (1).png" width=250 height=250>
+<br />
+<a href="https://www.hdwallpapers.in/apple_drops_4k-wallpapers.html">
+<img src="Untitled drawing (5).png" width=250 height=250>
+</a>
+<br />
+<img src="Untitled drawing (1).png" width=250 height=250>
+<br />
+<b>Click the apple for the full resolution image!</b>
+<br />
+<i><ul>Run through the full test by:
+<li>Fruit=Apple pen=Pen
+<li>Fruit=Pineapple Pen=Pen
+<li>Fruit=Apple Pen Pen=Pineapple Pen
 </html>
