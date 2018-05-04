@@ -2,18 +2,13 @@
 <head>
 <title>Madison's volleyball page
 </title>
-
-
 <script>
+function my(full,email)
 {
-function my(first,email)
-{
-
-	if (first=="" || email=="")
+	if (full=="" || email=="")
 	 alert ("required field, please enter")
 	else
-	 alert ("how you doing " + first)
-}
+	 alert ("how you doing " + full)
 }
 </script>
 </head>
@@ -124,9 +119,9 @@ method="get">
 <table border=3 bgcolor=blue>
 
 <tr><td>
-Your first Name</td>
+Your Full Name</td>
 <td>
-<input type=text name=first>
+<input type=text name=full>
 </td></tr>
 
 <tr><td>
@@ -138,25 +133,25 @@ Your email address </td>
 </td>
 <td>
 
-<input type=radio name=yn value="Yes">Yes
+<input type=radio name=yn value=Yes>Yes
 <br>
-<input type=radio name=yn value="No">No
+<input type=radio name=yn value=No>No
 <br>
 </td></tr>
 
 <tr><td>what position?
 <td>
-<input type=radio name=position value="Hitter">Hitter
+<input type=radio name=position value=Hitter>Hitter
 <br>
-<input type=radio name=position value="Setter">Setter
+<input type=radio name=position value=Setter>Setter
 <br>
-<input type=radio name=position value="Passer">Passer
+<input type=radio name=position value=Passer>Passer
 <br>
 </td></tr>
 
 
 <tr><td>
-<input type=submit value="Send this" onclick=my(first.value,email.value)>
+<input type=submit value="Send this" onclick=my(full.value,email.value)>
 <input type=reset value="Clear">
 </td></tr>
 </table>
