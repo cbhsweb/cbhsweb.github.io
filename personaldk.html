@@ -1,0 +1,147 @@
+<html>
+
+<head>
+
+<style>
+body {
+  background: tan;
+}
+#banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 150px;
+  z-index: -1;
+}
+</style>
+<style>
+a:link, a:visited {
+    width:150px;
+    height:40px;
+    background-color:gold;
+    border:1px solid red;
+	display: inline-block;
+	padding: 14px 11px;
+	text-align: center;
+}
+
+a:hover, a:active {
+	background-color: orange
+}
+</style>
+<style>
+table {
+		color: purple;
+		font-weight: bold; 
+		font-style: italics; 
+		font-size: 120%; 
+		text-align: center; 
+		font-family: 'Poppins', sans-serif;
+}
+</style>
+
+<form name="form1" action="mailto:dkoganofthe19@gmail.com" method="get" enctype="text/plain">
+
+<script>
+function validator(your,grade,join)
+{
+if (grade="" || yesornotojoining=="" || nameofnewmember=="")
+
+alert ("Please don't leave anything blank")
+
+else
+
+alert ("Thank you")
+}
+</script>
+
+<title>
+Literature Club
+</title>
+
+</head>
+<body>
+  <img id="banner" src="lit_logo.png">
+  <script src="dokidokijavascript.js"></script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="#about_us"><font size="+2">About Us</a>
+<a href="#How_it_Works">How it Works</a>
+<a href="#How_to_Join">How to Join</a>
+</font>
+
+<h1 align=center><font size=14>
+Welcome to Cocoa Beach Literature Club! 
+</font></h1>
+
+<h1 align=center><img src="books.png"></h1>
+
+<a name="about_us"><h1 align=center><u>
+About Us
+</u></h1></a>
+
+<p style="font-size:20">A group of aspiring writers and literary fans that meet once a week in order to discuss and learn about popular literature, as well as create our own works. We meet every Friday of school, after school. </p>
+
+<p style="font-size:20">The goal of the Literature Club is to improve the writing skills of our members and provide an artistic space for students to be able to write. </p>
+
+<a name="How_it_Works"><h1 align=center></a>
+How it Works: 
+</h1>
+
+<p style="font-size:20">
+Most Members come to the literature club to learn how to improve their own writing skills, but a large part of the club involves reading other people's works and simply having time to read and write. Members have the options of writing, reading, showing other members what they have written, or simply discussing literature with others. 
+</p>
+
+<a name="How_to_Join"><h1 align=center><u></a>
+How to Join
+</u></h1>
+
+<p style="font-size:20">
+Everyone is welcome to join! Stop by our meetings after school on Fridays or fill out an online form to join in on the fun. 
+</p>
+
+<form name=form1>
+<table border=2 align=center><tr><td colspan=2>
+Do you want to join?
+</tr></td>
+<tr><td colspan=1>
+Your Name</td><td colspan=5><input type type=test name=nameofnewmember>
+</td></tr>
+<tr><td>
+What Grade are you in? </td>
+<td>
+<input type=radio name=grade value=7th>7th
+</br>
+<input type=radio name=grade value=8th>8th
+</br>
+<input type=radio name=grade value=9th>9th
+</br>
+<input type=radio name=grade value=10th>10th
+</br>
+<input type=radio name=grade value=11th>11th
+</br>
+<input type=radio name=grade value=12th>12th
+</td></tr>
+<tr><td colspan=1>Would you like to join the Literature Club? </td>
+<td>
+<input type=radio name=yesornotojoining value=wouldliketojoin>Yes
+</br>
+<input type=radio name=yesornotojoining value=wouldnotliketojoin>No</td></tr>
+<tr><td colspan=2>
+<input type="submit" value="Send This Form!" onclick="validator(grade.value,yesornotojoining.value,nameofnewmember.value)">
+<input type=reset value="Clear">
+</td></tr>
+
+</table>
+
+<h1 align=center><img src="books2.png"></h1>
+
+</html>
