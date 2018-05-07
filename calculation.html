@@ -1,0 +1,104 @@
+<html>
+    <head>
+	<title>
+	    Aidan's Javascript Calculation
+	</title>
+	<script>
+	    alert ("How are you?")
+	</script>
+	<script>
+	    function calc(final,quiz1,quiz2,project1,project2,paper) {
+		if (final>100 || quiz1>100 || quiz2>100 || project1>100 || project2>100 || paper>100) {
+		    alert("Invalid grade!")
+		}
+		else {
+		    num=(final*0.25) + (quiz1*0.10) + (quiz2*0.10) + (project1*0.15) + (project2*0.15) + (paper*0.25)
+		    document.form1.answer.value=num
+		}
+	    }
+	</script>
+    </head>
+    <body bgcolor=lightgreen>
+	<font color=green>
+	    Dr.Friendly assigns final grades in her CSC005 class based on the following weights 
+	    for various elements of the course:
+	<form name=form1>
+	    <table bgcolor=skyblue border=3 bordercolor=red>
+		<tr>
+		    <td>
+			Final Exam
+		    </td>
+		    <td>
+			<input type=text name=final>
+		    </td>
+		</tr>
+		<tr>
+		    <td>
+			Quiz 1
+		    </td>
+		    <td>
+			<input type=text name=quiz1>
+		    </td>
+		</tr>
+		<tr>
+		    <td>
+			Quiz 2
+		    </td>
+		    <td>
+			<input type=text name=quiz2>
+		    </td>
+		</tr>
+		<tr>
+		    <td>
+			Programming Project 1
+		    </td>
+		    <td>
+			<input type=text name=project1>
+		    </td>
+		</tr>
+		<tr>
+		    <td>
+			Programming Project 2
+		    </td>
+		    <td>
+			<input type=text name=project2>
+		    </td>
+		</tr>
+		<tr>
+		    <td>
+			Term Paper
+		    </td>
+		    <td>
+			<input type=text name=paper>
+		    </td>
+		</tr>
+		<tr>
+		    <td>
+			Did you complete your website?
+		    </td>
+		    <td>
+			<input type=checkbox name=web>
+		    </td>
+		</tr>
+		<tr>
+		    <td>
+		    </td>
+		    <td>
+			<input type=reset>
+		    </td>
+		    <td>
+			<input type=button value="Calulate Grade" onclick=calc(final.value,quiz1.value,quiz2.value,project1.value,project2.value,paper.value)>
+		    </td>
+		</tr>
+		<tr>
+		    <td>
+			Your grade for this class is:
+		    <td>
+		    <td>
+			<input type=text name=answer>
+		    </td>
+		</tr>
+	    </table>
+	</form>
+    </body>
+</html>
