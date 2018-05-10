@@ -6,11 +6,11 @@
 
 </title>
 <script>
-function create(join,firstlast,email)
+function create(join,first,last,email)
 {
 if (join=="" || first=="" || last=="" || email=="")
 
-alert("please dont leave these fielods blank")
+alert("please dont leave these fields blank")
 
 else
 
@@ -43,17 +43,25 @@ p {
 </head>
 
 <body bgcolor=lavender>
-<font color=red>
+<font color=black>
 <front face="Poppins">
-<h2>
+<h1>
 
 Welcome to Serenity's 76er's Webpage
+</h1>
+<br>
+<h2>
+The Philadelphia 76ers (also commonly known as the Sixers) are an American professional basketball team based in the Philadelphia metropolitan area.
+The 76ers compete in the National Basketball Association (NBA) as a member of the league's Eastern Conference Atlantic Division and play at Wells Fargo Center. 
+Founded in 1946 and originally known as the Syracuse Nationals, they are one of the oldest franchises in the NBA, and one of only eight (out of 23) to survive the league's first decade.
+They have won three NBA championships, with their first coming as the Syracuse Nationals in 1955. The second title came in 1967, a team which was led by Chamberlain.
+The third title came in 1983, won by a team led by Erving and Malone.
+
 </h2>
 
 <a href="http://www.nba.com/sixers/">
 <img src=76erlogo.png
-height=300 width=300
-align=center border=3>
+height=300 width=300 border=3>
 </a>
 <table border=5 cellspacing=4 bgcolor-skyblue>
 <caption align=top><b>76ers Teams</b>
@@ -186,9 +194,8 @@ onclick=create(join.value,first.value,last.value,email.value)>
 </table>
 </form>
 
-<img src=76ersplayers.png
-height=300 width=300
-align=center border=3>
+<img src=76ersplayers.jpg
+height=300 width=300 border=3>
 </br>
 
 </body>
