@@ -1,0 +1,119 @@
+<html>
+
+<head>
+
+<title> Allen Dibben's sports page
+
+</title>
+<script>
+function create(join,first,last,email)
+{
+if (join=="" || first=="" || last=="" || email=="")
+
+alert ("Please don't leave these fields blank")
+
+else
+
+alert ("How you doin? " + first)
+
+}
+
+</script>
+
+<style>
+table {
+	color:brown;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 80%;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	color:green;
+}
+
+p {
+	color:orange;
+	font-weight:bold;
+}
+
+</style>
+</head>
+
+<body bgcolor=gold>
+<font color=blue>
+<font face="Poppins">
+<h2>
+
+Welcome to Allen Dibben's Miami Dolphin Team Page
+</h2>
+<br>
+
+
+
+<table border=1 bgcolor=cyan>
+<tr><td>Coach and players
+</td></tr>
+<tr>
+<td>Adam Gase (Coach)
+</td>
+<td><img src=dolphincoach.jpg>
+</td></tr>
+<tr>
+<td>Ryan Tannehill (Quaterback)
+</td>
+<td><img src=ryantannehill.jpg>
+</td></tr>
+<tr>
+<td>Frank Gore (Runnerback)
+</td>
+<td><img src=frankgore.jpg>
+</td></tr>
+</table>
+
+<ul>These are some websites for the Miami Dolphins
+<li><a href="http://www.miamidolphins.com">
+Miami Dolphins Offical website
+</a>
+<li><a href="https://www.cbssports.com/nfl/teams/page/MIA/miami-dolphins">
+Miami Dolphins's Team page on CBS Sports
+</a>
+<li><a href="http://dolphinscheerleaders.com/">
+Miami Dolphins Offical Cheerleader website
+</a>
+<form name=form1 action="mailto:0702766@brevardschools.org"
+ method="get" enctype="text/plain">
+
+<table border=1 bgcolor=salmon>
+<tr><td>Would you like to join?
+</td>
+<td><input type=radio name=join>Yes
+<br>
+<input type=radio name=join>No
+</td></tr>
+<tr><td>Enter your first name
+<td><input type=text name=first>
+</td>
+<td>Enter your last name
+<input type=text name=last>
+</td></tr>
+
+<tr><td>Enter your email address
+</td>
+<td><input type=text name=email>
+</td></tr>
+<tr>
+<td><input type="submit" value="Submit Form" 
+onclick=create(join.value,first.value,last.value,email.value)
+>
+</td><td>
+<input type=reset>
+</tr>
+
+</table>
+<body background=dolphins.jpg>
+</form>
+</body>
+</html>
