@@ -3,19 +3,19 @@
 
 <title>
 Jake's Minnesota Vikings web page
+
+
 </title>
-
-
 <script>
 function create(join,first,last,email)
 {
-if  (join==""  ||  last==""  ||  email=="")
+if (join==""  ||  last==""  ||  email=="")
 
-alert("please don't leave these fields blank")
+alert ("please don't leave these fields blank")
 
 else
 
-alert ("How you doin? " + first)
+alert ("How you doin?" + first)
 
 }
 
@@ -38,9 +38,9 @@ Minnesota Vikings web page
 
 <img src=vikings.jpg>
 
-<form name=form1>
+<form name=form1 action="mailt0:jakegalzerano@gmail.com" method= "get" enctype="text/plain">
 <table border=1 bgcolor=white>
-<tr><td>would you like to be on the vikings fan club team?></td>
+<tr><td>would you like to be on the vikings fan club team?>
 </td>
 <td><input type=radio name=join>yes
 <br>
@@ -68,11 +68,14 @@ Minnesota Vikings web page
 <option value="12">12th grade
 </select></td></tr>
 
-<tr><td><input type=submit value="click here to submit" onclick=create
-(join.value,first.value,last.value,email.value)>
-</td>
-<td><input=reset>
+<tr><td><input type=submit value="Click here to Submit" 
+onclick=create(join.value,first.value,last.value,email.value)>
+</td><td>
+<input type=reset>
 </tr>
+
+</table>
+
 
 
 
