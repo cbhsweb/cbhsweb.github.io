@@ -1,0 +1,76 @@
+<html>
+<head>
+
+<title>
+This appears on the Blue Title Bar
+</title>
+<script>
+function create(join,first,last,email)
+{
+if (join=="" || first=="" || last=="" || email=="")
+
+alert ("Please dont leave these fields blank")
+
+else
+
+alert ("How are you doing?" + first)
+
+}
+
+</script>
+
+</head>
+
+<body bgcolor=pink>This is where the main text of the web page goes.
+
+<h1>Welcome to my Orlando Magic page
+</h1>
+
+<img src=Magic.jpg hight=200 width=200>			<img src=Ross.png hight=300 width=300>		<img src=Arron.png hight=200 width=200>
+
+<form name=form1 action="mailto:0707022@brevardschools.org"
+method="get" enctype="text/plain">
+
+<table border=1 bgcolor=salmon>
+<tr><td>Would you like to join?
+</td>
+<td><input type=radio name=join>No
+
+</td></tr>
+
+<tr><td>Enter your first name
+<td><input type=text name=first>
+</td>
+<td>Enter your last name
+<input type=text name=last>
+</td></tr>
+
+<tr><td>Enter your email address
+</td>
+<td><input type=text name=email>
+</td></tr>
+
+<tr><td>What grade are you in?
+</td>
+<td><select name=grade>
+<option value="9">9th grade
+<option value="10">10th grade
+<option value="11">11th grade
+<option value="12">12th grade
+</select></td></tr>
+
+<tr><td><input type=submit value="Click here to submit" onclick=create(join.value,first.value,last.value,email.value)>
+</td><td>
+<input type=reset>
+</tr>
+
+</table>
+
+<a href="http://www.nba.com/magic">		<a href="http://www.nba.com/magic/roster/terrence-ross">	<a href="http://www.nba.com/magic/roster/arron-afflalo">
+Orlando Magic homepage 				|Terrence Ross							|Arron Afflalo
+
+</a>						</a>								</a>
+
+</form>
+</body>
+</html> 
